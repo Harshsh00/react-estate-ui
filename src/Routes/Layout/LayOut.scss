@@ -1,0 +1,33 @@
+@import "../../responsive.scss";
+
+.layOut {
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    // background: rgb(236, 166, 140);
+    max-width: 1280px;
+}
+
+
+  @include md {
+    // background: rgb(155, 187, 245);
+    max-width: 768px;
+  }
+
+  @include sm {
+    // background: rgb(239, 138, 138);
+    max-width: 640px;
+  }
+
+  .content{
+    flex: 1;
+    height : calc(100vh - 100px);
+  }
+}
